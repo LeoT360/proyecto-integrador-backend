@@ -67,6 +67,7 @@ public class Subject {
         this.updatedAt = LocalDateTime.now();
     }
 
+    @Override
     public String toString() {
         return  "SubjectId= " + getSubjectId() + '\n' +
                 "Code= " + getCode() + '\n' +
@@ -75,6 +76,7 @@ public class Subject {
                 "ProgramId= " + getProgramId() + '\n' +
                 "-----------------------------";
     }
+    
     @PrePersist
     protected void onCreate() {
         LocalDateTime now = LocalDateTime.now();

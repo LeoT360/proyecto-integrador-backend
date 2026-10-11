@@ -57,6 +57,7 @@ public class Group {
         this.updatedAt = LocalDateTime.now();
     }
 
+    @Override
     public String toString() {
         return  "Code= " + getCode() + '\n' +
                 "ProgramId= " + getProgramId() + '\n' +

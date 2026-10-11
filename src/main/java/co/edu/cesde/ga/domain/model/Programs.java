@@ -56,6 +56,7 @@ public class Programs {
         this.updatedAt = LocalDateTime.now();
     }
 
+    @Override
     public String toString() {
         return  "ProgramId= " + getProgramId() + '\n' +
                 "Code= " + getCode() + '\n' +

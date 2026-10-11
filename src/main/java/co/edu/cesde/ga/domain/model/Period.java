@@ -63,6 +63,7 @@ public class Period {
         this.updatedAt = LocalDateTime.now();
     }
 
+    @Override
     public String toString() {
         return  "PeriodId= " + getPeriodId() + '\n' +
                 "Code= " + getCode() + '\n' +

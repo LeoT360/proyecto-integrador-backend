@@ -41,6 +41,7 @@ public class Student extends Person {
 
     public Student(Long userId, String documentType, String documentNumber, String firstName, String lastName, String status, String birthDate) {
         super(userId, null, documentType, documentNumber, firstName, lastName, status);
+        this.birthDate = birthDate;
     }
 
     public Student(Long studentId, String birthDate, Long userId, String code,String documentType, String documentNumber, String firstName, String lastName, String status) {
@@ -51,6 +52,7 @@ public class Student extends Person {
         this.updatedAt = LocalDateTime.now();
     }
 
+    @Override
     public String toString() {
         return  "StudentId= " + getStudentId() + '\n' +
                 "UserId= " + getUserId() + '\n' +

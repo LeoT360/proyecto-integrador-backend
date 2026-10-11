@@ -60,6 +60,7 @@ public class GroupSubject {
         this.updatedAt = LocalDateTime.now();
     }
 
+    @Override
     public String toString() {
         return  "GroupSubjectId= " + getGroupSubjectId() + '\n' +
                 "GroupId= " + getGroupId() + '\n' +

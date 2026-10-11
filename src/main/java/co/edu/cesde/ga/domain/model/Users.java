@@ -67,6 +67,7 @@ public class Users {
         this.updatedAt = LocalDateTime.now();
     }
 
+    @Override
     public String toString() {
         return  "UserId= " + getUserId() + '\n' +
                 "Username= " + getUsername() + '\n' +

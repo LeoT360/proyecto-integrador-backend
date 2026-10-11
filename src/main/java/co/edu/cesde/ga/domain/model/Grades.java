@@ -63,6 +63,7 @@ public class Grades {
         this.updatedAt = LocalDateTime.now();
     }
 
+    @Override
     public String toString() {
         return  "GroupSubjectId= " + getGroupSubjectId() + '\n' +
                 "StudentId= " + getStudentId() + '\n' +

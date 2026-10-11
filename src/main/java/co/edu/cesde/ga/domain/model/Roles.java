@@ -58,6 +58,7 @@ public class Roles {
         this.updatedAt = LocalDateTime.now();
     }
 
+    @Override
     public String toString() {
         return  "RoleId= " + getRolesId() + '\n' +
                 "Name= " + getName() + '\n' +

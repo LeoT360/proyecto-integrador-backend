@@ -45,6 +45,7 @@ public class Teacher extends Person {
         this.updatedAt = LocalDateTime.now();
     }
 
+    @Override
     public String toString() {
         return  "TeacherId= " + getTeacherId() + '\n' +
                 "UserId= " + getUserId() + '\n' +

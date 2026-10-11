@@ -20,7 +20,8 @@ public class StudentController {
  @PostMapping
  public ResponseEntity<CreateStudentResponseDto> create(@Valid @RequestBody CreateStudentRequestDto d){
   var x=service.create(new Student(d.userId(),d.documentType(),d.documentNumber(),d.firstName(),d.lastName(),d.status(),d.birthDate()));
-  var r=CreateStudentResponseDto.fromStudent(x); return ResponseEntity.created(URI.create("/students/"+x.getStudentId())).body(r);
+  var r=CreateStudentResponseDto.fromStudent(x);
+  return ResponseEntity.created(URI.create("/students/"+x.getStudentId())).body(r);
  }
  @GetMapping
  public ResponseEntity<List<CreateStudentResponseDto>> findAll(){
